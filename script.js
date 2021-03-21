@@ -1,5 +1,44 @@
 const itemService = document.querySelectorAll('.itemService')
 const model = document.querySelectorAll('.model')
+const typeServicesBlock = document.querySelector('.typeServicesBlock')
+const partnersBlock = document.querySelector('.partnersBlock')
+const maps = document.querySelector('.maps')
+const contactUs = document.querySelector('.contactUs')
+
+function logoFun() {
+    document.querySelector('.logo').style.opacity = 1
+    document.querySelector('.logo').style.transition = '2s'
+    typeServicesBlock.style.height = innerHeight + 'px'
+    partnersBlock.style.height = innerHeight + 'px'
+    maps.style.height = innerHeight + 'px'
+    contactUs.style.height = innerHeight + 'px'
+
+}
+logoFun()
+
+function partnersFun() {
+    partnersBlock.style.right = '0px'
+    partnersBlock.style.transition = '.5s'
+}
+
+function servicesFun() {
+    typeServicesBlock.style.opacity = '1'
+    typeServicesBlock.style.transition = '.4s'
+}
+
+window.addEventListener('scroll', () => {
+    console.log(window.pageYOffset)
+    if (window.pageYOffset > 350) {
+        servicesFun()
+    } else {
+        typeServicesBlock.style.opacity = '0'
+    }
+    if (window.pageYOffset > 700) {
+        partnersFun()
+    } else {
+        partnersBlock.style.right = '5000px'
+    }
+})
 
 itemService[0].addEventListener('mouseover', () => {
     model[0].style.opacity = '.5'
@@ -92,8 +131,3 @@ itemService[8].addEventListener('mouseout', () => {
     model[8].style.zIndex = '-1'
 })
 
-function fun() {
-    document.querySelector('.logo').style.opacity = 1
-    document.querySelector('.logo').style.transition = '2s'
-}
-fun()

@@ -64,6 +64,7 @@ a {
     justify-content: center;
     flex-direction: column;
     background-color: red;
+    opacity: 0;
 }
 .titleService {
     text-align: center;
@@ -85,6 +86,8 @@ a {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(0, 18, 117);
+    position: relative;
+    right: 5000px;
 }
 .partnersTitle {
     text-align: center;
@@ -109,7 +112,7 @@ a {
 }
 .contactUsTitle {
     color: white;
-    margin: 10px auto;
+    margin: 20px auto;
     font-size: 20px;
 }
 .contactUsForm {
@@ -146,7 +149,7 @@ a {
     position: absolute;
     width: 400px;
     height: 542px;
-    background-color: rgb(0, 18, 117);
+    background-color: white;
     opacity: 0;
     z-index: -100;
     left: 10px;
