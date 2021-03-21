@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.item {
+    color: #83017d;
+    font-size: 20px;
+}
+
+.language {
+    position: relative;
+    top: 3px;
+    color: #83017d;
+    font-size: 15px;
+    cursor: pointer;
+}
+.language::after {
+    content: "🇺🇸";
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+}
+.logo {
+    display: flex;
+    margin: 150px;
+}
+.logo img {
+    width: 500px;
+    margin: 0 auto;
+}
+.maps {
+    background-color: #83017d;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.maps-item1 {
+    color: white;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.map {
+    margin: 0 auto;
+}
+.typeServicesBlock {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+}
+.titleService {
+    text-align: center;
+    color: white;
+}
+.typeServices {
+    display: flex;
+    justify-content: center;
+}
+.itemService {
+    margin: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.partnersBlock {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 18, 117);
+}
+.partnersTitle {
+    text-align: center;
+    color: white;
+}
+.partners {
+    display: flex;
+    justify-content: center;
+}
+.itemPartners {
+    margin: 100px;
+    color: white;
+    cursor: pointer;
+}
+.contactUs {
+    background-color: #178301;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.contactUsTitle {
+    color: white;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.contactUsForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
+.contactUsForm input {
+}
+.contactUsForm button {
+}
