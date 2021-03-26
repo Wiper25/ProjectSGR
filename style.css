@@ -3,11 +3,18 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+    background: url(img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .backgroundBlock {
     display: flex;
     justify-content: flex-end;
 }
 .nav {
     background-color: #383d3f;
-    width: 100px;
+    width: 50px;
 }
