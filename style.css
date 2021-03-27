@@ -63,13 +63,16 @@ html {
     display: inline-block;
     cursor: pointer;
 }
+.menu {
+    position: relative;
+}
 .menuBlock {
     width: 200px;
     height: 0px;
     background-color: rgba(24, 20, 90, 0.95);
     position: absolute;
-    right: 265px;
-    top: 160px;
+    right: 20px;
+    top: 50px;
     transition: .2s all;
     display: flex;
     flex-direction: column;
