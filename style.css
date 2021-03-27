@@ -1,20 +1,119 @@
-body {
+* {
     box-sizing: border-box;
-    margin: 0;
+}
+body {
     padding: 0;
+    margin: 0;
 }
 html {
-    background: url(img/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(/img/background.jpg) no-repeat;
+    background-size: 100%;
 }
-.backgroundBlock {
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    /* background-color: #a0a0a0; */
+}
+/* ::-webkit-scrollbar-thumb {
+    background-color: rgba(24, 20, 90, 0.95);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(2, 0, 35, 0.9);
+} */
+.wrapper {
+    background-color: rgb(2, 0, 35, 0.5);
+    width: 100%;
+    padding-top: 50px;
+}
+.content {
+
+    background-color: rgb(2, 0, 35, 0.50);
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    overflow: auto;
+    padding: 50px;
+    color: white;
+    min-width: 956px;
+    max-width: 956px;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.btnMenu {
+    position: relative;
+    left: 800px;
+    display: inline-block;
+    cursor: pointer;
+}
+.menuBlock {
+    width: 200px;
+    height: 0px;
+    background-color: rgba(24, 20, 90, 0.95);
+    position: absolute;
+    right: 265px;
+    top: 160px;
+    transition: .2s all;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -10;
+    text-align: center;
+    -webkit-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
 }
-.nav {
-    background-color: #383d3f;
-    width: 50px;
+.menuBlock a {
+    margin-top: 18px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.75);
+    margin-right: 10px;
+}
+.menuBlock a:hover {
+    -webkit-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.9);
+    box-shadow: 10px 6px 11px 0px rgba(0,0,0,0.9);
+    transition: .2s all;
+    color: yellow;
+}
+.item {
+    margin-top: 50px;
+    width: 850px;
+    height: 500px;
+    color: rgb(255, 255, 255);
+}
+.item img {
+    width: 250px;
+    position: relative;
+    top: 220px;
+    opacity: 0;
+    transition: 1s all;
+}
+.iconLab2 img {
+    position: relative;
+    left: 620px;
+}
+.iconLab4 img {
+    position: relative;
+    left: 620px;
 }
