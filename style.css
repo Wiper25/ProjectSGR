@@ -133,7 +133,7 @@ html {
 .question {
     display: inline-block;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
     left: 50px;
 }
 .opacity {
@@ -141,6 +141,7 @@ html {
 }
 li {
     cursor: pointer;
+    /* font-size: 15px; */
 }
 li:hover {
     color: yellow;
@@ -150,8 +151,8 @@ li:hover {
     position: relative;
     transition: 1s all;
     opacity: 1;
+    top: 15px;
 }
-
 .iconLab2 img {
     position: relative;
     left: 620px;
