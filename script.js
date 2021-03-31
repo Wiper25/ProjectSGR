@@ -45,7 +45,7 @@ obj.btn[0].addEventListener('click', () => {
     obj.content.scrollTop = 135
 })
 obj.btn[1].addEventListener('click', () => {
-    obj.content.scrollTop = 670
+    obj.content.scrollTop = 675
 })
 obj.btn[2].addEventListener('click', () => {
     obj.content.scrollTop = 1220
