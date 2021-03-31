@@ -133,7 +133,7 @@ html {
 .question {
     display: inline-block;
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     left: 50px;
 }
 .opacity {
@@ -156,10 +156,10 @@ li:hover {
     position: relative;
     left: 620px;
 }
-/* .iconLab4 img {
+.iconLab4 img {
     position: relative;
     left: 620px;
-}  */
+} 
 
 /* .sgrImg {
     width: 100px;
