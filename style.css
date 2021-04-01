@@ -191,8 +191,26 @@ li:hover {
     resize: none;
 }
 ::placeholder {
-  color: white;
-
+    color: white;
+}
+.socialNetworkBlock {
+    display: flex;
+    justify-content: space-around;
+}
+.socialNetwork {
+    display: inline-block;
+    width: 50px;
+    margin: 10px;
+}
+.socialNetwork img{
+    width: 50px;
+    border-radius: 50%;
+}
+.socialNetwork img:hover{
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(88, 86, 133, 0.95);;
+    -moz-box-shadow: 0px 0px 24px 0px rgba(88, 86, 133, 0.95);;
+    box-shadow: 0px 0px 24px 0px rgba(88, 86, 133, 0.95);;
+    cursor: pointer;
 }
 /* .sgrImg {
     width: 100px;
